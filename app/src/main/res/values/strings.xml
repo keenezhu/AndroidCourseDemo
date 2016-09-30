@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">CourseDemo</string>
+    <string name="hello">Hello Android!</string>
+    <string name="data_pass">Data Pass between Activity</string>
+    <string name="menu_test">Menus</string>
+    <string name="listview_adapter">ListView</string>
+    <string name="input_hint">input your words here!</string>
+    <string name="back_text">Return to Last Page</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="search">Search</string>
+    <string name="create">Create</string>
+    <string name="share">Share</string>
+    <string name="service_test">Service Test</string>
+    <string name="start_service">Start Service</string>
+    <string name="start_intent_service">Start Intent Service</string>
+    <string name="bind_service">Bind Service</string>
+    <string name="send_msg">Send a Message to Server Service</string>
+    <string name="title_activity_list_screen">ListScreen</string>
+    <string name="reply_string">server replied string</string>
+    <string name="recycler_view">RecyclerView Test</string>
+    <string name="title_activity_recycler_view_screen">RecyclerViewScreen</string>
+</resources>
