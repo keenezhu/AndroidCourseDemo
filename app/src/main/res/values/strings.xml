@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">CourseDemo</string>
     <string name="hello">Hello Android!</string>
-    <string name="data_pass">Data Pass between Activity</string>
+    <string name="data_pass">Data Pass between Activities</string>
     <string name="menu_test">Menus</string>
     <string name="listview_adapter">ListView</string>
     <string name="input_hint">input your words here!</string>
