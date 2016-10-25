@@ -54,6 +54,10 @@
         <activity
             android:name=".RecyclerViewScreen"
             android:label="@string/title_activity_recycler_view_screen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MultiThreadActivity"
+            android:label="@string/title_activity_multi_thread"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

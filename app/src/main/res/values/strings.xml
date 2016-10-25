@@ -19,5 +19,9 @@
     <string name="title_activity_list_screen">ListScreen</string>
     <string name="reply_string">server replied string</string>
     <string name="recycler_view">RecyclerView Test</string>
+    <string name="multi_thread">Multi-Thread</string>
+    <string name="ui_receive">UI Thread Receive MSG</string>
+    <string name="ui_send">UI Thread Send MSG</string>
     <string name="title_activity_recycler_view_screen">RecyclerViewScreen</string>
+    <string name="title_activity_multi_thread">MultiThreadActivity</string>
 </resources>

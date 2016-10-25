@@ -43,6 +43,11 @@
             android:text="@string/recycler_view" />
 
         <Button
+            android:id="@+id/multi_thread"
+            style="@style/button_style"
+            android:text="@string/multi_thread" />
+
+        <Button
             android:id="@+id/service_button"
             style="@style/button_style"
             android:text="@string/service_test" />

@@ -14,6 +14,17 @@ public class ParcelModel implements Parcelable {
 
     private String data;
 
+
+    private int testInt = 4;
+
+    public int getTestInt() {
+        return testInt;
+    }
+
+    public void setTestInt(int testInt) {
+        this.testInt = testInt;
+    }
+
     public String getData() {
         return data;
     }
@@ -29,14 +40,18 @@ public class ParcelModel implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-         dest.writeString(data);
+        dest.writeInt(testInt);
+        dest.writeString(data);
     }
 
-    public static final Parcelable.Creator<ParcelModel> CREATOR=new Parcelable.Creator<ParcelModel>(){
+    public static final Parcelable.Creator<ParcelModel> CREATOR = new Parcelable.Creator<ParcelModel>() {
         @Override
         public ParcelModel createFromParcel(Parcel source) {
-            ParcelModel pm=new ParcelModel();
+            ParcelModel pm = new ParcelModel();
+
+            pm.setTestInt(source.readInt());
             pm.setData(source.readString());
+
             return pm;
         }
 

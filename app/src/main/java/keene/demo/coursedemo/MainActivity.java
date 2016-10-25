@@ -1,12 +1,11 @@
 package keene.demo.coursedemo;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.RecyclerView;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
+
 /**
  * for entrance of this project
  * @version 1.0
@@ -14,7 +13,7 @@ import android.widget.TextView;
  */
 public class MainActivity extends AppCompatActivity {
     public static final int REQUEST_VERIFY = 1;
-    public static final int REQUEST_SINGOUT = 2;
+    public static final int REQUEST_SIGNOUT = 2;
     private TextView dataShow;
 
     @Override
@@ -53,6 +52,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(nextPage);
                 break;
             }
+
+            case R.id.multi_thread: {
+                Intent nextPage = new Intent(this, MultiThreadActivity.class);
+                startActivity(nextPage);
+                break;
+            }
+
             case R.id.service_button: {
                 Intent nextPage = new Intent(this, ServiceTestScreen.class);
                 startActivity(nextPage);
@@ -70,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == REQUEST_VERIFY && resultCode == DataPassActivity.RESULT_BACK) {
             DataModel dataModel = (DataModel) data.getSerializableExtra("input_data");
-            dataShow.setText(dataModel.getData());
+            dataShow.setText(dataModel.getData()+"::");
         }
     }
 }

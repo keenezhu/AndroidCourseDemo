@@ -23,6 +23,7 @@ public class DataPassActivity extends AppCompatActivity {
         Intent data=new Intent();
         DataModel dataModel=new DataModel();
         dataModel.setData(inputText.getText().toString());
+        //dataModel.setTestInt(8);
         data.putExtra("input_data",dataModel);
         setResult(RESULT_BACK,data);
         finish();
